@@ -1,6 +1,6 @@
 body{
     min-width: 1440px;
-    /* scrollbar-width: none; */
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 /* 隐藏垂直滚动条 */
 body::-webkit-scrollbar {
@@ -8,12 +8,13 @@ body::-webkit-scrollbar {
 }
 /* 隐藏滚动条轨道（背景） */
 body::-webkit-scrollbar-track {
-    background: transparent;
+    /* background: transparent; */
 }
 /* 隐藏滚动条滑块（拖动条） */
 body::-webkit-scrollbar-thumb {
-    background: transparent; 
+    /* background: transparent;  */
 }
+
 
 /* 三个点分隔符 */
 .ht-mark{
@@ -36,7 +37,6 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 .page-sider .sider-tel .sider-tel-icon{
-    width: 50px;
     height: 50px;
     background: url(https://www.jiker.com/_nuxt/img/479d1c8.png) no-repeat 0 0;
     background-size: 50px 50px;
@@ -105,8 +105,7 @@ display: block;
 
 .page-header .header-box a.logo-a{
     padding-right: 54px;
-    /* 消除空白字符影响 */
-    font-size: 0;
+    height: 65px;
 }
 
 .page-header .header-box .box-content{
@@ -221,6 +220,7 @@ display: block;
 }
 .page-header .header-box .box-content .content-bottom .content-bottom-right_nav .right_nav-item{
     display: flex;
+    align-items: center;
     margin-left: 40px;
     padding-bottom: 18px;
     color: #858585;
@@ -249,7 +249,6 @@ display: block;
 }
 .body-banner .banner-carousel{
     position: relative;
-    width: 100%;
     height: 100%;
     padding: 10px 66px;
     background: url(https://assets.jiker.com/_for_plus_sub_project/2020/0608/admin/I1iOPrCq0ve7QUzRud3Wxk361vHc8l9FLM5VzzAz.png) no-repeat 50% center / 1920px 380px;
@@ -276,7 +275,6 @@ display: block;
 }
 .body-banner .banner-nav .banner-nav-item .item-name{
     position: relative;
-    display: inline-block;
     width: 210px;
     height: 40px;
     background-color: rgba(37,34,34,.5);
@@ -308,10 +306,8 @@ display: block;
     padding-left: 40px;
     padding-right: 40px;
     background: #222;
-    /* z-index: -1; */
 }
 .banner-nav .banner-nav-item .item-infor .infor-dl{
-    width: 722px;
     margin-bottom: 28px;
 }
 .banner-nav .banner-nav-item .item-infor .infor-dl .infor-dt{
@@ -381,7 +377,6 @@ display: block;
 }
 .body-ads .ads-course .course-wrap{
     display: flex;
-    justify-content: space-between;
     width: 1240px;
     margin: 0 auto;
 }
@@ -539,7 +534,6 @@ display: block;
 }
 
 .plus-section .plus-content{
-    width:630px;
     display: flex;
 }
 .plus-section .plus-content .content-item{
@@ -622,7 +616,6 @@ display: block;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 610px;
 }
 .career-section .career-content .career-item{
     display: inline-block;
@@ -686,7 +679,6 @@ display: block;
     display: inline-block;
     margin-right: 20px;
     width: 295px;
-    height: 359px;
     background-color: #fff;
 }
 .course-section .course-content .course-item:nth-child(4n){
@@ -698,7 +690,6 @@ display: block;
 .course-section .course-content .course-item .course-item-top{
     position: relative;
     width: 100%;
-    height: 170px;
 }
 .course-section .course-item .course-item-top .course-top-img{
     width: 295px;
@@ -896,8 +887,6 @@ display: block;
 
 body .page-footer{
     padding: 50px 100px 57px;
-    text-align: center;
-    font-weight: 400;
     background-color: #252222;
 }
 .page-footer .footer-wrap{
@@ -906,7 +895,6 @@ body .page-footer{
 }
 .page-footer .footer-top{
     display: flex;
-    align-items: flex-start;
     padding-bottom: 34px;
     border-bottom: 1px solid #414141;
 }
@@ -918,11 +906,9 @@ body .page-footer{
 }
 
 .page-footer .footer-top .top-logo_box{
-    text-align: left;
     margin-right: 128px;
 }
 .page-footer .footer-top .top-nav_box{
-    padding-right: 0;
     margin-right: 60px;
 }
 .page-footer .footer-top .top-cooperate_box{
@@ -930,15 +916,18 @@ body .page-footer{
     margin-right: 54px;
 }
 .page-footer .footer-top .top-serve_box{
-    text-align: left;
     width: 144px;
+}
+.top-logo_box .logo-a_img{
+    display: block;
+    height: 74px;
+    margin-bottom: 15px;
 }
 
 .top-logo_box .logo-img{
     display: block;
     width: 156px;
     height: 70px;
-    margin-bottom: 15px;
 }
 .top-logo_box .logo-declaration{
     margin-bottom: 40px;
@@ -1012,7 +1001,6 @@ body .page-footer{
 .top-cooperate_box .cooperate-logos{
     display: flex;
     flex-wrap: wrap;
-    width: 383px;
 }
 .top-cooperate_box .cooperate-logos img{
     display: inline-block;
@@ -1055,7 +1043,7 @@ body .page-footer{
     font-size: 12px;
     font-weight: 300;
     color: #8e8e8e;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+
 }
 .page-footer .footer-bottom .bottom-icon_box .icon{
     display: inline-block;
